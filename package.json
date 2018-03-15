@@ -22,7 +22,11 @@
     "html",
     "script"
   ],
-  "author": "HP Dietz",
+  "author": {
+    "name": "HP Dietz",
+    "email": "h.p.dietz@gmail.com",
+    "twitter": "@h_p_d"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/haensl/minify-inline-json/issues"
