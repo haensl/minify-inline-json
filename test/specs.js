@@ -142,7 +142,7 @@ describe('minify-inline-json', () => {
                 mimeTypes: [
                   'application/ld+json'
                 ]
-              })
+              });
               done();
             });
         });
