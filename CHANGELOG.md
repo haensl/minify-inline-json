@@ -1,3 +1,8 @@
+## 1.1.0
+* [#6: Migrate to CircleCI.](https://github.com/haensl/minify-inline-json/issues/6)
+* Internalize eslint config into `package.json` and remove deprecated `.eslintrc.json`.
+* Move main module into `/lib` directory.
+
 # 1.0.2
 * [#4: Update dependencies.](https://github.com/haensl/minify-inline-json/issues/4)
 
