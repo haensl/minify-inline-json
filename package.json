@@ -1,14 +1,17 @@
 {
   "name": "minify-inline-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minify inlined/embedded JSON data within script tags",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "tdd": "mocha --watch",
-    "lint": "eslint -c .eslintrc.json **/*.js",
-    "precommit": "npm run lint && npm test",
-    "prepush": "npm run lint && npm test"
+    "lint": "eslint -c .eslintrc.json **/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
   },
   "repository": {
     "type": "git",
@@ -37,8 +40,8 @@
   "homepage": "https://github.com/haensl/minify-inline-json#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^4.19.1",
-    "husky": "^1.1.4",
-    "mocha": "^5.2.0"
+    "eslint": "^7.19.0",
+    "husky": "^4.3.8",
+    "mocha": "^8.2.1"
   }
 }
