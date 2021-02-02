@@ -186,7 +186,7 @@ jobs:
           name: install module
           working_directory: /tmp/test-app
           command: |
-            npm i -S ~/minify-inline-json/haensl-minify-inline-json.tgz
+            npm i -S ~/minify-inline-json/minify-inline-json.tgz
       - run:
           name: test module exports function
           working_directory: /tmp/test-app
