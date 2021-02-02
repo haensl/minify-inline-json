@@ -1,7 +1,7 @@
 const fs = require('fs');
 const join = require('path').join;
 const expect = require('chai').expect;
-const minifyInlineJson = require('../');
+const minifyInlineJson = require('../lib');
 const fixturesPath = join(__dirname, 'fixtures');
 
 const fixture = (name) =>
@@ -40,7 +40,7 @@ describe('minify-inline-json', () => {
   describe('application/ld+json', () => {
     const expected = [
       '{"type":"jsonld","parent":"head"}',
-      '{"type":"jsonld","parent":"body"}',
+      '{"type":"jsonld","parent":"body"}'
     ];
     let output;
 
