@@ -1,3 +1,6 @@
+## 1.1.2
+* [#13: Update dependencies.](https://github.com/haensl/minify-inline-json/issues/13)
+
 ## 1.1.1
 * [#8: Update Readme with CircleCI patch.](https://github.com/haensl/minify-inline-json/issues/8)
 
