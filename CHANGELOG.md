@@ -1,3 +1,6 @@
+## 1.1.6
+* [#21: Update dependencies.](https://github.com/haensl/minify-inline-json/issues/21)
+
 ## 1.1.5
 * [#19: Add funding information.](https://github.com/haensl/minify-inline-json/issues/19)
 * Update dependencies.
