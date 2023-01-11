@@ -1,3 +1,6 @@
+## 1.1.8
+* [#25: Update dependencies.](https://github.com/haensl/minify-inline-json/issues/25)
+
 ## 1.1.7
 * [#23: Update dependencies.](https://github.com/haensl/minify-inline-json/issues/23)
 
