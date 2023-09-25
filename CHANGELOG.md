@@ -1,3 +1,6 @@
+## 1.1.11
+* [#30: Fix CI dependency caching.](https://github.com/haensl/minify-inline-json/issues/30)
+
 ## 1.1.10
 * [#27: Update dependencies.](https://github.com/haensl/minify-inline-json/issues/27)
 
