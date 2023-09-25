@@ -70,19 +70,6 @@ commands:
             mkdir /tmp/<< parameters.project_name >>
             cd /tmp/<< parameters.project_name >> && npm init -y && echo "Created package.json" && cat package.json
 
-  package-information:
-    steps:
-      - run:
-          name: install tree
-          command: sudo apt-get -y install tree
-      - run:
-          name: gather bundle information
-          command: |
-            npm info minify-inline-json@${VERSION} > ./bundle.info
-            tree -s node_modules/minify-inline-json >> ./bundle.info
-      - store_artifacts:
-          path: bundle.info
-
 workflows:
   version: 2
   default:
@@ -255,7 +242,6 @@ jobs:
           working_directory: /tmp/test-app
           command: |
             node -e "const minifyInlineJson = require('minify-inline-json'); const assert = require('assert').strict; assert.deepEqual(typeof minifyInlineJson, 'function');"
-      - package-information
 
   publish-github-release:
     docker:
