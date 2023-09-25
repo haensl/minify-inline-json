@@ -46,7 +46,8 @@ commands:
     steps:
       - checkout
       - restore_cache:
-          keys: minify-inline-json-dependencies-{{ checksum "package-lock.json" }}
+          keys:
+            - minify-inline-json-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: install dependencies
           command: npm i
